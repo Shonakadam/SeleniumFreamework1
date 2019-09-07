@@ -28,7 +28,7 @@ public class TrackoGrideProject {
   public void setup(String bro) {
 	  System.out.println(bro);
             DesiredCapabilities capabilities= new DesiredCapabilities();
-            capabilities.setBrowserName("chrome");
+            capabilities.setBrowserName("Firefox");
 		 try {
 			driver=new RemoteWebDriver(new URL("http://192.168.1.204:4444/wd/hub"), capabilities);
 		} catch (MalformedURLException e) {

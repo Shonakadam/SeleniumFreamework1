@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="geet.com.org.pune.SeleniumFramework1.TrackoGrideProject">
+      <class name="geet.com.org.pune.SeleniumFramework1.WordPress">
         <methods>
+          <include name="Login"/>
+          <include name="DashBoard"/>
           <include name="afterTest"/>
-          <include name="f"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- geet.com.org.pune.SeleniumFramework1.TrackoGrideProject -->
+      </class> <!-- geet.com.org.pune.SeleniumFramework1.WordPress -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
