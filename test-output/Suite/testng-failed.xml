@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="Test(failed)" parallel="tests">
+  <test thread-count="5" name="Test2(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="geet.com.org.pune.SeleniumFramework1.TrackoGrideProject">
+      <class name="geet.com.org.pune.SeleniumFramework1.WordPress">
         <methods>
+          <include name="DashBoard"/>
           <include name="afterTest"/>
-          <include name="f"/>
-          <include name="setup"/>
+          <include name="setup" invocation-numbers="0"/>
+          <include name="Loginwordpress"/>
         </methods>
-      </class> <!-- geet.com.org.pune.SeleniumFramework1.TrackoGrideProject -->
+      </class> <!-- geet.com.org.pune.SeleniumFramework1.WordPress -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="geet.com.org.pune.SeleniumFramework1.WordPress">
+        <methods>
+          <include name="DashBoard"/>
+          <include name="afterTest"/>
+          <include name="setup" invocation-numbers="0"/>
+          <include name="Loginwordpress"/>
+        </methods>
+      </class> <!-- geet.com.org.pune.SeleniumFramework1.WordPress -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="geet.com.org.pune.SeleniumFramework1.WordPress">
+        <methods>
+          <include name="DashBoard"/>
+          <include name="afterTest"/>
+          <include name="Loginwordpress"/>
+        </methods>
+      </class> <!-- geet.com.org.pune.SeleniumFramework1.WordPress -->
+    </classes>
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

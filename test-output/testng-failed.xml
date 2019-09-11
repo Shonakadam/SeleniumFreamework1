@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="geet.com.org.pune.SeleniumFramework1.WordPress">
+      <class name="geet.com.org.pune.SeleniumFramework1.FaceBookAutomation">
         <methods>
-          <include name="Login"/>
-          <include name="DashBoard"/>
+          <include name="f"/>
+          <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- geet.com.org.pune.SeleniumFramework1.WordPress -->
+      </class> <!-- geet.com.org.pune.SeleniumFramework1.FaceBookAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
